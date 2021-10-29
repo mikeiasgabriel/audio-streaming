@@ -6,8 +6,7 @@ const scdlCreate = require('soundcloud-downloader').create;
 const axios = require('axios').default
 const debug = require('debug')('http')
 
-const SOUNDCLOUD_URL = 'https://soundcloud.com/user-746329428/devcast/s-0AcVucpLys3?in=user-746329428/sets/projeto-und-ii-temas-na-area-1//s-ETnYmYdYEPV'
-const CLIENT_ID = 'yGulQnndmijePkC8RlDVWKoK8FMaMUnk'
+const CLIENT_ID = this.CLIENT_ID || 'yGulQnndmijePkC8RlDVWKoK8FMaMUnk'
 
 const scdl = scdlCreate({
   clientID: CLIENT_ID,
@@ -27,8 +26,7 @@ http
   .createServer(async function (req, res) {
     const { url, method } = req;
     
-    const soundToListen = sounds[url];
-    
+    const soundToListen = sounds[url.replace('/', '')];    
     
     if(soundToListen) {
       debug(`request to listen ${url}`)
