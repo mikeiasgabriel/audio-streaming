@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mikéias Azevedo",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "soundcloud-downloader": "^1.0.0"
+  },
+  "scripts": {
+    "start": "DEBUG=* node index.js"
+  }
+}
