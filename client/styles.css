@@ -1,6 +1,10 @@
 * {
   margin: 0;
 }
+input {
+  margin-top: 20px;
+  width: 100%;
+}
 body {
   display: flex;
   align-items: center;
