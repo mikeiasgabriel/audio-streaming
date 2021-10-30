@@ -18,7 +18,7 @@ const audio = document.getElementsByTagName("audio")[0];
 const source = document.getElementsByTagName("source")[0];
 
 const states = {
-  STOPPED: "stoped",
+  STOPPED: "stopped",
   PLAYING: "playing",
   PAUSED: "paused",
 };
