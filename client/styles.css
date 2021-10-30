@@ -1,16 +1,19 @@
 * {
   margin: 0;
 }
+
 input {
   margin-top: 20px;
   width: 100%;
 }
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
 }
+
 .phone {
   margin-top: 20px;
   width: 428px;
@@ -19,6 +22,7 @@ body {
   background-color: rgb(32, 32, 32);
   display: flex;
 }
+
 .buttons {
   margin-top: 400px;
   display: flex;
@@ -26,6 +30,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .left-button,
 .right-button,
 .play-button {
@@ -35,12 +40,14 @@ body {
   align-items: center;
   display: flex;
 }
+
 .left-button,
 .right-button {
   width: 58px;
   height: 58px;
   border: 2px solid #1db954;
 }
+
 .play-button {
   width: 92px;
   height: 92px;
@@ -48,23 +55,28 @@ body {
   top: 428px;
   background: #1db954;
 }
+
 .left-button {
   left: 60px;
   top: 446px;
 }
+
 .right-button {
   left: 310px;
   top: 446px;
 }
+
 img {
   position: relative;
   width: 24px;
   height: 24px;
 }
+
 .play-button > img {
   width: 40px;
   height: 40px;
 }
+
 .preview {
   margin-top: 20px;
   margin-left: auto;
