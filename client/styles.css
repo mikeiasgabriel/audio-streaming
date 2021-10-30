@@ -15,9 +15,8 @@ body {
 }
 
 .phone {
-  margin-top: 20px;
   width: 428px;
-  height: 90vh;
+  height: 620px;
   border-radius: 20px;
   background-color: rgb(32, 32, 32);
   display: flex;
@@ -85,5 +84,28 @@ img {
   height: 350px;
   border-radius: 10px;
   background: url("assets/placeholder.png");
+  justify-content: center;
+}
+
+.stats {
+  color: #FFFF;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-family: 'Roboto', 'Tahoma';
+}
+
+.stats .title {  
+  font-weight: 700;
+}
+
+.stats .artist {
+  font-size: 1.0rem;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }

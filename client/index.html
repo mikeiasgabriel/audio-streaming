@@ -6,22 +6,31 @@
     <title>Audio streaming sample</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="phone">
-        <span class="preview" />
-        <div class="buttons">
-            <div class="left-button">
-                <img src="assets/skip-back.svg" />
+    <div class="container">
+        <div class="phone">
+            <span class="preview" />
+            <div class="buttons">
+                <div class="left-button">
+                    <img src="assets/skip-back.svg" />
+                </div>
+                <div class="play-button">
+                    <img src="assets/play.svg" />
+                </div>
+                <div class="right-button">
+                    <img src="assets/skip-forward.svg" />
+                </div>
             </div>
-            <div class="play-button">
-                <img src="assets/play.svg" />
-            </div>
-            <div class="right-button">
-                <img src="assets/skip-forward.svg" />
+            <input type="range" id="slider">
+            <div class="stats" >
+                <div class="title">Nome</div>
+                <div class="artist">Artista</div>
             </div>
         </div>
-        <input type="range" id="slider">
     </div>
     <audio controls hidden>
         <source type="audio/mpeg">
