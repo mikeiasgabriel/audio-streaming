@@ -57,3 +57,10 @@ O motivo pelo qual não conseguimos aplicar essa ideia para resolver o desafio p
 Uma abordagem alternativa seria utilizar os pacotes do stream do arquivo transmitido para salvar em um novo arquivo, mas isso não seria produtivo para resolver o problema que nos foi proposto, mas seria útil para transferência de arquivos em rede, por exemplo.
 
 Também aprendemos sobre conversão de tipos utilizando o `ffmpeg` de uma forma prática que nos renderá um projeto futuro. 
+
+--- 
+
+## Autores
+
+Mikéias Azevedo
+Ascênio Sanderson
