@@ -68,6 +68,6 @@ img {
   width: 350px;
   height: 350px;
   border-radius: 10px;
-  background: url("assets/preview.png");
+  background: url("assets/placeholder.png");
   justify-content: center;
 }
