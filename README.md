@@ -62,5 +62,5 @@ Também aprendemos sobre conversão de tipos utilizando o `ffmpeg` de uma forma 
 
 ## Autores
 
-Mikéias Azevedo
-Ascênio Sanderson
+* Mikéias Azevedo 
+* Ascênio Sanderson
