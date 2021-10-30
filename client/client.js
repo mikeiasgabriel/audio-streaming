@@ -2,6 +2,24 @@ window.onload = main;
 
 let selectedMusicIndex = 0;
 const musics = ["dev_cast", "motor_grafico", "design_patterns", "direct"];
+const stats = [
+  {
+    title: 'Dev Cast #1 - Tecnologias para desenvolvimento web',
+    artists: 'Ascênio e Mikéias'
+  },
+  {
+    title: 'Podcast Computação #1 - Motores gráficos de Jogos',
+    artists: 'Daniel Duarte'
+  },
+  {
+    title: 'Ei, Dev #1 - Design Patterns',
+    artists: 'Maykon e Renan'
+  },
+  {
+    title: 'Direct Cast #1',
+    artists: 'Noberto Negreiros'
+  },  
+]
 
 const musicsPreview = {
   dev_cast: "devcast.png",
@@ -17,6 +35,8 @@ const preview = document.getElementsByClassName("preview")[0];
 const audio = document.getElementsByTagName("audio")[0];
 const source = document.getElementsByTagName("source")[0];
 const slider = document.getElementById("slider");
+const title = document.getElementsByClassName("title")[0];
+const artist = document.getElementsByClassName("artist")[0];
 
 const states = {
   STOPPED: "stopped",
@@ -43,9 +63,17 @@ function changeMusic(newMusicIndex) {
   start(music);
 }
 
+function loadStats() {
+  const currentStats = stats[selectedMusicIndex];
+
+  title.innerHTML = currentStats.title;
+  artist.innerHTML = currentStats.artists;
+}
+
 function loadPreview(music) {
   const previewAsset = musicsPreview[music];
   preview.style.background = `url('assets/${previewAsset}')`;
+  loadStats();
 }
 
 function changeState(state) {
